@@ -36,7 +36,7 @@ export function Pricing() {
                 </span>
               </div>
               <div className="flex items-baseline justify-center gap-1">
-                <span className="text-5xl font-bold">$9</span>
+                <span className="text-5xl font-bold">$1.99</span>
                 <span className="text-muted-foreground">/ audit</span>
               </div>
             </div>

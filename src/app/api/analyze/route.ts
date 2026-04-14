@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { openai } from "@/lib/openai";
+import { getOpenAI } from "@/lib/openai";
 import { SYSTEM_PROMPT } from "@/lib/ai-prompt";
 import type { AuditResult } from "@/types";
 
@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const response = await openai.chat.completions.create({
+    const response = await getOpenAI().chat.completions.create({
       model: "gpt-4o",
       max_tokens: 1500,
       response_format: { type: "json_object" },

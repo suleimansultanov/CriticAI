@@ -56,7 +56,7 @@ export function Paywall({ auditId }: PaywallProps) {
             disabled={loading}
           >
             <CreditCard className="mr-2 h-4 w-4" />
-            {loading ? "Redirecting..." : "Unlock Full Audit — $9"}
+            {loading ? "Redirecting..." : "Unlock Full Audit — $1.99"}
           </Button>
         </CardContent>
       </Card>
